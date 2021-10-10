@@ -1,0 +1,39 @@
+
+//          7 6 5 4  3 2 1 0  F E D C  B A 9 8  7 6 5 4  3 2 1 0
+//r-type: [ 0 c x x  x d d d  d d d d  s s s s  s s s x  x x x x ] - 1-bit op, 1-bit conditional, 7-bit src, 7-bit dest
+//l-type: [ 1 c h x  x d d d  d d d d  l l l l  l l l l  l l l l ] - 1-bit op, 1-bit conditional, 1 bit high/low select, 7-bit dest, 12-bit literal
+
+THIS NEEDS TO BE CHECKED AND FIXED
+
+0x820055 // loadl $0x55 -> 32
+0xA20000 // loadu $0x0 -> 32
+0x821001 // loadl $0x1 -> 33
+0xA21000 // loadu $0x0 -> 33
+0x022400 // move 32 -> 34
+0x023420 // move 33 -> 35
+0x024000 // move 0 -> 36
+0x025000 // move 0 -> 37
+0x026000 // move 0 -> 38
+0x401000 // cmove 0 -> 1
+0x027000 // move 0 -> 37
+0x028000 // move 0 -> 38
+0x029000 // move 0 -> 39
+0x000000 // not reading this back out yet - will depend on # functional units
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
+0x000000
